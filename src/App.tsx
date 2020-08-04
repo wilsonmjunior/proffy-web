@@ -1,12 +1,11 @@
 import React from 'react';
+import './assets/styles/global.css';
+import Routes from './routes';
 
 const App = () => {
 
   return (
-    <div>
-      <h1>Proffy</h1>
-      <h3>Sua plataforma de estudos online</h3>
-    </div>
+    <Routes />
   )
 }
 

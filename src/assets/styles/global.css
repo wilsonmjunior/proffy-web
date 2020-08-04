@@ -1,3 +1,4 @@
+/* 16px default font-size */
 :root {
   --color-background: #F0F0F7;
   --color-primary-lighter: #9871F5;
@@ -35,4 +36,30 @@ body,
 
 body {
   background: var(--color-background);
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem Poppins;
+  color: var(--color-text-base);
+}
+
+.container {
+  width: 90vh;
+  max-width: 700px;
+}
+
+@media (min-width: 700px) {
+  :root {
+    /* 16*0.625 = 10px */
+    font-size: 62.5%;
+  }
 }
